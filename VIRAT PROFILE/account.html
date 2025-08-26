@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virat Profile - Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="header">
+
+        <div class="container"><div class="navbar">
+           <div class="logo">
+            <img weidth = "100px" height="80px" src="Screenshot 2024-07-09 155028.png" >
+             
+          </div>
+               <nav>
+                    <ul id="MenuItems">
+                       <li><a href="index.html">HOME</a></li>
+                       <li><a href="product.html">PRODUCTS</a></li>
+                       <li><a href="about.html">ABOUT</a></li>
+                       <li><a href="about.html">CONTACT</a></li>
+                       <li><a href="account.html">ACCOUNT</a></li>
+                     </ul>  
+               </nav>
+               <a href="shoping card.html"><img src="images\Screenshot 2024-07-13 143357.png"weidth="30px" height="30px"></a>
+               <a href=""><img src="images\Screenshot 2024-07-20 210420.png" class="menu-icon" onclick="menutoggle()"></a>
+       </div>
+    
+
+    <!-- Welcome Popup -->
+    <div id="welcomePopup" class="popup">
+        <div class="popup-content">
+            <h2>Welcome to Virat Profile!</h2>
+            <p>Your trusted e-commerce platform.</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h1>Virat Profile - Account</h1>
+
+        <!-- Registration Form -->
+        <div id="registerForm">
+            <h2>Register</h2>
+            <input type="text" id="regName" placeholder="Full Name" required>
+            <input type="email" id="regEmail" placeholder="Email" required>
+            <input type="password" id="regPassword" placeholder="Password" required>
+            <button onclick="register()">Register</button>
+            <p>Already have an account? <a href="#" onclick="toggleForms()">Login</a></p>
+        </div>
+
+        <!-- Login Form -->
+        <div id="loginForm" style="display: none;">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <a href="#" onclick="toggleForms()">Register</a></p>
+        </div>
+    </div>
+
+    <script src="web.js"></script>
+</body>
+</html>

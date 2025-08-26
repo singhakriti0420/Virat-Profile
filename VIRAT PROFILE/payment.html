@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Virat Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+       <div class="logo">
+          <img weidth="100px" height="80px" src="Screenshot 2024-07-09 155028.png">
+
+       </div>
+       <nav>
+          <ul id="MenuItems">
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="product.html">PRODUCTS</a></li>
+             <li><a href="about.html">ABOUT</a></li>
+             <li><a href="about.html">CONTACT</a></li>
+             <li><a href="account.html">ACCOUNT</a></li>
+          </ul>
+       </nav>
+       <img src="images\Screenshot 2024-07-13 143357.png" weidth="30px" height="30px">
+       <img src="images\Screenshot 2024-07-20 210420.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+ </div>
+
+
+    <header>
+        <h1>Secure Payment</h1>
+    </header>
+
+    <section class="payment-container">
+        <h2>Billing Details</h2>
+        <form id="paymentForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+
+            <label for="phone">Phone Number</label>
+
+            <h3>Select Payment Method</h3>
+            <label><input type="radio" name="payment" value="card" checked> Credit/Debit Card</label>
+            <label><input type="radio" name="payment" value="upi"> UPI</label>
+            <label><input type="radio" name="payment" value="netbanking"> Net Banking</label>
+            <label><input type="radio" name="payment" value="wallet"> Wallet</label>
+
+            <div id="cardDetails">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+
+                <label for="expiry">Expiry Date</label>
+                <input type="month" id="expiry" required>
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" required>
+            </div>
+
+            <div id="upiDetails" style="display: none;">
+                <label for="upi">UPI ID</label>
+                <input type="text" id="upi" placeholder="yourname@upi">
+            </div>
+
+            <button type="submit">Proceed to Pay</button>
+        </form>
+    </section>
+
+                               <!-- footer -->
+      
+      <div class="footer">
+        <div class="container">
+           <div class="row">
+              <div class="footer-col-1">
+                 <h3>thanks for visiting this website </h3>
+                 <h4>visit this website in android, ios and in your pc. </h4>
+              </div>
+              <div class="footer-col-2">
+                 <img width="190" src="Screenshot 2024-07-09 155028.png">
+                 <p> our purpose is to sustainably make the pleasure and benefits of home decorations and to the many.
+                 </p>
+              </div>
+              <div class="footer-col-3">
+                 <h3> Useful Links</h3>
+                 <ul>
+                    <li>Coupns</li>
+                    <li>Blog Post</li>
+                    <li>Return policy</li>
+                    <li>Join Affiliate</li>
+                 </ul><br><br><br>
+              </div>
+              <div class="footer-col-4">
+                 <h3> follow us </h3>
+                 <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                 </ul>
+              </div>
+           </div>
+           <hr>
+           <p class="Copyright">© 2025 Virat Profile. All Rights Reserved</p>
+        </div>
+     </div>
+  
+
+
+
+<script src="web.js"></script>
+</body>
+</html>
